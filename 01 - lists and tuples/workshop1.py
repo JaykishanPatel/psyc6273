@@ -16,6 +16,9 @@
 
 # 2d. the last five elements of x
 
+# *** problems after this point depends on material that we'll cover in the
+#     second lecture
+
 # 2e. every second element of x, starting with the first element
 
 # 2f. every third element of x, starting with the second element
