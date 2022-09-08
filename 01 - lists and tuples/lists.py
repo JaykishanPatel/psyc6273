@@ -14,32 +14,32 @@ z = ( x + y ) * y
 
 import math
 
-z = math.sin( x )
+z = math.sin(x)
 z = math.pi
-z = math.log( x )
-z = math.exp( x )
+z = math.log(x)
+z = math.exp(x)
 
 # 2. Data types
 
 # float
 x = 3.1415
-type( x )
+type(x)
 y = 0.0
-type( y )
+type(y)
 
 # int
 y = 0
-type( y )
+type(y)
 
 # bool
 x = True
-type( x )
+type(x)
 y = False
-type( y )
+type(y)
 
 # complex
 x = 1 + 2j
-type( x )
+type(x)
 
 # Containers are objects that can contain other objects. Examples
 # include sequences (e.g., lists), mappings (e.g., dictionaries),
@@ -52,7 +52,7 @@ type( x )
 
 # - index
 
-x = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]  # a list
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  # a list
 
 x[0]   # elements are numbered starting at zero
 x[1]
@@ -108,14 +108,14 @@ x[:5:-2]
 
 # - addition and multiplication
 
-a = [ 1, 2, 3 ] + [ 4, 5, 6 ]  # concatenates sequences of the same type
-b = 3 * [ 1, 2, 3 ]
-c = 4 * [ None ]
+a = [1, 2, 3] + [4, 5, 6]  # concatenates sequences of the same type
+b = 3 * [1, 2, 3]
+c = 4 * [None]
 
 # - membership
 
-64 in [ 32, 64, 128, 256 ]  # True
-65 in [ 32, 64, 128, 256 ]  # False
+64 in [32, 64, 128, 256]  # True
+65 in [32, 64, 128, 256]  # False
 
 'ct' in 'cacti'  # for strings, 'in' checks for a substring
 
@@ -138,13 +138,13 @@ min(2, 3, 4)
 
 # - item assignment
 
-x = [ 1, 2, 3 ]
+x = [1, 2, 3]
 x[1] = 5
 x[10] = 5  # error; can't assign to a position that doesn't exist
 
 # small detour: value and reference
 
-x = [ 1, 2, 3 ]
+x = [1, 2, 3]
 y = x      # y is assigned by reference, not by value
 x[0] = 10
 x
@@ -154,7 +154,7 @@ y[0] = 1000
 x          # and we if change y, we change x as well
 y
 
-x = [ 100, 200, 300 ]  # here we reassign x, but not y
+x = [100, 200, 300]  # here we reassign x, but not y
 x
 y                      # so y retains its previous value
 
@@ -168,9 +168,9 @@ x[:]  # returns the whole sequence, but a copy, not the original
 
 # - assigning to slices
 
-x[0:2] = [ 1, 2, 3 ]
-x[0:2] = [ 1, 2, 3, 4, 5 ]  # can change number of elements
-x[1:1] = [ 20, 20, 20 ]     # can insert elements
+x[0:2] = [1, 2, 3]
+x[0:2] = [1, 2, 3, 4, 5]  # can change number of elements
+x[1:1] = [20, 20, 20]     # can insert elements
 
 # - deleting elements and slices; also see remove() and pop() methods below
 
@@ -181,7 +181,7 @@ x[3:5] = []
 
 # - list methods
 
-x = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]  # a list
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  # a list
 
 # adding elements
 x.append(11)              # appends value; changes x in place
@@ -234,4 +234,3 @@ x = 3 * ( 40 + 2, )
 
 x[0] = 10    # error
 x.append(5)  # error
-
