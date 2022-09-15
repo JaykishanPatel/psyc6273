@@ -43,7 +43,7 @@ x = random.random()
 print(x)
 if x > 0.1 and not ( x >= 0.4 and x <= 0.6 ):
     print('in the required range')
-    
+
 
 # for loop
 
@@ -92,7 +92,7 @@ while True:
     x = random.gauss(0,1)
     if x<= -2 or x >= 2:
         continue
-
+    
     # can have additional processing here, e.g., check whether x passes
     # an additional test
     y = x ** 2 + 1
@@ -113,10 +113,11 @@ print(x, y)
 
 
 # list comprehension
-import sympy
-x = [i for i in (1,2,3,4,5,6,7,8,9,10) if sympy.isprime(i)]
-x = [i for i in range(100) if sympy.isprime(i)]
-x = [i**2 for i in range(100) if sympy.isprime(i)]
+import math
+x = [i for i in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10) if math.sin(i)>0]
+x = [i for i in range(100) if math.sin(i)>0]
+x = [i for i in range(100)]
+x = [i**2 for i in range(100) if math.sin(i)>0]
 x = [i**2 for i in range(10)]
 
 
