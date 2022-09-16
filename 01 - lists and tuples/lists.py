@@ -79,7 +79,7 @@ x[:]
 # negative indices count back from end of sequence
 x[4:-3]
 x[-3:-1]
-x[-3:0]  # result is empty when second index is before first one
+x[-3:0]  # result is empty when first index is after second index
 x[-3:]
 x[:-4]
 
@@ -168,8 +168,8 @@ x[:]  # returns the whole sequence, but a copy, not the original
 
 # - assigning to slices
 
-x[0:2] = [1, 2, 3]
-x[0:2] = [1, 2, 3, 4, 5]  # can change number of elements
+x[0:3] = [1, 2, 3]
+x[0:3] = [1, 2, 3, 4, 5]  # can change number of elements
 x[1:1] = [20, 20, 20]     # can insert elements
 
 # - deleting elements and slices; also see remove() and pop() methods below
