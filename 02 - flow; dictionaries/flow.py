@@ -1,6 +1,6 @@
 # flow.py  Flow control: conditionals and loops
 
-# if-elif-else
+# 1. if-elif-else
 
 x = 3
 
@@ -45,9 +45,9 @@ if x > 0.1 and not ( x >= 0.4 and x <= 0.6 ):
     print('in the required range')
 
 
-# for loop
+# 2. for loop
 
-for x in [1, 2, 3]:  # iterate over a list
+for x in [1, 2, 3]:    # iterate over a list
     print(x)
 
 for x in (1, 2, 3):    # iterate over a tuple
@@ -57,7 +57,7 @@ expt = dict(subject='jfk', date='14-jan-1960', condition='valid')
 for k in expt:         # iterate over keys in a dictionary
     print(k, expt[k])
 
-for x in range(10):    # iterate over a range of numbers
+for x in range(10):    # iterate over a range of numbers (0...9)
     print(x)
 
 v = ('a', 'b', 'c', 'd', 'e')
@@ -69,7 +69,7 @@ for i, x in enumerate(v):    # iterate over a tuple, but provide
 # are examples of "iterables", i.e., things we can iterate over.
 
 
-# while loop
+# 3. while loop
 
 # get a sample from a limited range of the normal distribution
 x = -10
@@ -112,8 +112,10 @@ print(x, y)
 # is an allowed response.
 
 
-# list comprehension
+# 4. list comprehension
+
 import math
+
 x = [i for i in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10) if math.sin(i)>0]
 x = [i for i in range(100) if math.sin(i)>0]
 x = [i for i in range(100)]
@@ -121,7 +123,7 @@ x = [i**2 for i in range(100) if math.sin(i)>0]
 x = [i**2 for i in range(10)]
 
 
-# an example that uses several topics from this lecture: the bubblesort algorithm
+# 5. an example that uses several topics from this lecture: the bubblesort algorithm
 
 # get a list of random numbers
 import random
@@ -135,12 +137,12 @@ while keep_sorting:   # not sure how many iterations, so we use a while loop
     # step through elements of list    
     keep_sorting = False;
     for i in range(len(x)-1):   # here we know how many iterations, so we use
-                                # a for loop. and note that we can put loops
+                                # a for loop. note that we can put loops
                                 # within loops.
         
-        # wrong order?
-        if x[i] > x[i+1]:       # use an if statement to check a condition;
-                                # and note that we can put an if statement
+        # are these two elements in the wrong order?
+        if x[i] > x[i+1]:       # use an if statement to check a condition.
+                                # note that we can put an if statement
                                 # within a loop.
             
             # switch order of two elements
@@ -156,3 +158,4 @@ while keep_sorting:   # not sure how many iterations, so we use a while loop
 
 # show sorted list
 print(x)
+

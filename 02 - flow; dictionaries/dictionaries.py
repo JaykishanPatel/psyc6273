@@ -8,12 +8,13 @@
 
 # 1. creating dictionaries
 
+# most common methods
 expt = dict(subject='jfk', time='14-Jan-1960 16:00', condition='validcue')
-
 expt = {'subject' : 'jfk', 'time' : '14-Jan-1960 16:00', 'condition' : 'validcue'}
+
+# additional methods
 expt = dict([('subject', 'jfk'), ('time', '14-Jan-1960 16:00'), ('condition', 'validcue')])
 expt = dict()
-
 expt = dict.fromkeys(['jfk', 'time', 'condition'])     # create a new dictionary with these keys
 expt = dict.fromkeys(['jfk', 'time', 'condition'], '') # last argument is default value
 
@@ -45,9 +46,13 @@ x = expt.get('rt',0.0)     # as above, but returns default value 0.0 if key does
 x = expt.pop('subject')    # returns value for key 'rt', and removes the entry from the dictionary
 x, y = expt.popitem()      # returns an arbitrary (k,v) entry, and removes it from the dictionary
 
-# copy and clear
-expt2 = expt.copy()     # shallow copy; values are the same, not copies; see example on pp. 64-65
+# shallow copy
+expt2 = expt.copy()        # values are the same, not copies; see example on pp. 64-65
+
+# deep copy
 from copy import deepcopy
-expt2 = deepcopy(expt)  # deep copy
-expt.clear()            # clears all entries
+expt2 = deepcopy(expt)
+
+# clear
+expt.clear()               # clears all entries
 
