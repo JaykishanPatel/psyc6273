@@ -15,8 +15,8 @@ expt = {'subject' : 'jfk', 'time' : '14-Jan-1960 16:00', 'condition' : 'validcue
 # additional methods
 expt = dict([('subject', 'jfk'), ('time', '14-Jan-1960 16:00'), ('condition', 'validcue')])
 expt = dict()
-expt = dict.fromkeys(['jfk', 'time', 'condition'])     # create a new dictionary with these keys
-expt = dict.fromkeys(['jfk', 'time', 'condition'], '') # last argument is default value
+expt = dict.fromkeys(['subject', 'time', 'condition'])     # create a new dictionary with these keys
+expt = dict.fromkeys(['subject', 'time', 'condition'], '') # last argument is default value
 
 # 2. basic dictionary operations
 
@@ -35,7 +35,7 @@ len(expt)                # number of entries
 x = expt.setdefault('pcorrect',0.75)  # sets value for key 'pcorrect' if none exists;
                                       # returns final value corresponding to key
 
-newdata = dict(condition='invalidcue', errtype='mismatch')
+newdata = dict(condition='invalidcue', cuepos='left')
 expt.update(newdata)  # updates dictionary expt with entries of newdata;
                       # adds new entries, and replaces existing entries
 
@@ -43,7 +43,7 @@ expt.update(newdata)  # updates dictionary expt with entries of newdata;
 x = expt.get('rt')         # returns a value corresponding to key 'rt'; if no such key,
                            # returns None, whereas expt['rt'] raises an exception
 x = expt.get('rt',0.0)     # as above, but returns default value 0.0 if key doesn't exist
-x = expt.pop('subject')    # returns value for key 'rt', and removes the entry from the dictionary
+x = expt.pop('rt')         # returns value for key 'rt', and removes the entry from the dictionary
 x, y = expt.popitem()      # returns an arbitrary (k,v) entry, and removes it from the dictionary
 
 # shallow copy

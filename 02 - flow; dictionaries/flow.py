@@ -133,7 +133,7 @@ print(x)
 # loop until list is sorted
 keep_sorting = True
 while keep_sorting:   # not sure how many iterations, so we use a while loop
-
+    
     # step through elements of list    
     keep_sorting = False;
     for i in range(len(x)-1):   # here we know how many iterations, so we use
