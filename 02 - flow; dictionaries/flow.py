@@ -122,6 +122,12 @@ x = [i for i in range(100)]
 x = [i**2 for i in range(100) if math.sin(i)>0]
 x = [i**2 for i in range(10)]
 
+# we can select elements of one list, based on the values of elements of
+# another list. you'll use this feature in problem set 1.
+x = [ random.gauss(0,1) for i in range(100) ]
+y = [ random.gauss(0,1) for i in range(100) ]
+z = [ x[i] for i in range(100) if y[i]>0 ]
+
 
 # 5. an example that uses several topics from this lecture: the bubblesort algorithm
 
