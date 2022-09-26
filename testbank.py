@@ -84,3 +84,37 @@ z = (50,)
 
 # 6b. the numbers 1, 2, and 3, in that order, repeated five times
 z = 5 * ( 1, 2, 3 )
+
+
+# 7. Use a for loop to print the integers from 1 to 20.
+
+for x in range(1,21):
+    print(x)
+
+
+# 8. Use a while loop to get a sample from the standard normal
+# distribution, between -2 and 2.
+
+import random
+while True:
+    x = random.gauss(0,1)
+    if x>=-2 and x<=2:
+        break
+
+
+# 9. Use a list comprehension to make a list of the squares of the integers
+# from 1 to 20.
+
+x = [ i**2 for i in range(1,21) ]
+
+
+# 10. (a) Create a dictionary with three keys that are strings, and three values
+# that are integers.
+
+diameters = { 'earth' : 12472, 'moon' : 3475, 'sun' : 1392000 }
+
+# (b) Look up one of the values in the dictionary you just created, and assign
+# it to the variable x.
+
+x = diameters['earth']
+
