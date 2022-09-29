@@ -91,7 +91,7 @@ help(addit)
 
 # lambda functions are simple one-line functions
 
-f = lambda x : x**2
+f = lambda z : z**2
 
 f(10)
 
@@ -104,14 +104,14 @@ ulist = [ random.uniform(0,1) for i in range(10) ]
 x = [ (u,random.uniform(u,1)) for u in ulist ]
 
 # sort a list of tuples based on the second element in each tuple
-def f(x):
-    return x[1]
+def f(z):
+    return z[1]
 x.sort(key=f)    # we can sort a list based on any property we can define
 
 # do the same thing with a lambda function
-f = lambda x : x[1]
+f = lambda z : z[1]
 x.sort(key=f)
 
 # do the same thing passing the lambda function directly as an argument
-x.sort(key = lambda x : x[1])
+x.sort(key = lambda z : z[1])
 
