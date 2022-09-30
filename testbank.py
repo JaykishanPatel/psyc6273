@@ -118,3 +118,41 @@ diameters = { 'earth' : 12472, 'moon' : 3475, 'sun' : 1392000 }
 
 x = diameters['earth']
 
+
+# 11. Set x to 3.141592654. Use an f-string to print a message that reports the value
+# of x with four decimal places.
+
+x = 3.141592654
+print(f'The value of x is {x:.4f}.')
+
+
+# 12. Define a function f that takes two arguments, x and y, and returns
+# sin(x)*cos(y). Give y a default value of zero.
+
+import math
+def f(x, y=0):
+    return math.sin(x) * math.cos(y)
+
+
+
+# 13. Write code that creates a text file containing the square of numbers 1 to 10.
+
+f = open('squares.txt', 'w')
+
+for i in range(1,11):
+    f.write(f'{i}\n')
+
+f.close()
+
+
+# 14. Define a function randt(n, u, v) that returns an n-tuple of random
+# floating point numbers between u and v. Give u a default value of 0,
+# and v a default value of 1.
+
+import random
+
+def randt(n, u=0, v=1):
+    x = [ random.uniform(u,v) for i in range(n) ]
+    return tuple(x)
+
+
