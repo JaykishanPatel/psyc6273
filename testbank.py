@@ -140,7 +140,7 @@ def f(x, y=0):
 f = open('squares.txt', 'w')
 
 for i in range(1,11):
-    f.write(f'{i}\n')
+    f.write(f'{i**2}\n')
 
 f.close()
 
