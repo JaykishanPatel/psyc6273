@@ -156,3 +156,35 @@ def randt(n, u=0, v=1):
     return tuple(x)
 
 
+# 15. Write code that uses PsychoPy to open a window that covers
+# the whole screen.
+
+from psychopy import visual
+win = visual.Window(size=[], units='pix', waitBlanking=True, fullscr=True)
+
+
+# 16. Write code that uses PsychoPy to show a black circle centered in
+# a window called win.
+
+stim = visual.Circle(win=win, fillColor='black', lineColor=None, radius=25)
+stim.draw()
+win.flip()
+
+
+# 17. Write code that uses PsychoPy to get the current mouse position.
+
+from psychopy import event
+mouse = event.Mouse()
+x, y = mouse.getPos()
+
+
+# 18. Write code that uses PsychoPy to find which keyboard keys are
+# currently being pressed.
+
+from psychopy import event
+keys = event.getKeys()
+
+
+# 19. Write code that closes a PsychoPy window called win.
+win.close()
+
