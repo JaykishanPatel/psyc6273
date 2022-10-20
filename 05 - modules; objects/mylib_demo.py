@@ -4,11 +4,11 @@
 # you might want to gather them into one same 'lib' directory. And import them so:
 
 import mylib.mymod as mmod
-import mylib.stair as stair
-
+import mylib.classes as cl
 
 mmod.addit(20,30)
 print(mmod.earth_radius_km)
 
 # create a staircase object, i.e., an instance of the staircase class
-s = stair.Stair(up=1, down=2)
+s = cl.Stair(up=1, down=2)
+student = cl.Observer(name = "Sam", age = "24")
