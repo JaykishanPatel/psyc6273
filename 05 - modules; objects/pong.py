@@ -20,7 +20,7 @@ def keysDown(keylist=[]):
     return [ k.name for k in keys ]
 
 # create rectangle objects for paddles
-padoffset = 0.4 * win.size[0] / 2
+padoffset = 0.8 * winLim[0]
 padheight = 100
 pad = [ visual.Rect(win, width=20, height=padheight, fillColor=(1,1,1), lineColor=None, pos=(-padoffset,0)),
         visual.Rect(win, width=20, height=padheight, fillColor=(1,1,1), lineColor=None, pos=( padoffset,0)) ]
@@ -87,7 +87,6 @@ while True:
     if f % 60 == 0:
         ballVec[0] *= 1.05
         ballVec[1] *= 1.05
-
 
 # close the full-screen window
 win.close()
