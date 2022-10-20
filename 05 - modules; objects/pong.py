@@ -1,4 +1,4 @@
-# pong1.py  PsychoPy demonstration: pong
+# pong.py  PsychoPy demonstration: pong
 
 from psychopy import visual, event
 from psychopy.hardware import keyboard
