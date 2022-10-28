@@ -188,3 +188,27 @@ keys = event.getKeys()
 # 19. Write code that closes a PsychoPy window called win.
 win.close()
 
+
+# 20. Write code that uses the numpy module to do the following.
+
+# 20a. Create a 5 x 3 array z filled with zeros.
+
+z = np.zeros(shape=(5,3))
+
+# 20b. Create a 4 x 5 array z filled with samples from the standard
+# normal distribution (i.e., mean=0, standard deviation=1).
+
+z = np.random.normal(loc=0.0, scale=1.0, size=(4,5))
+
+# 20c. Create a 1D array that contains the numbers 10, 20, 30.
+
+z = np.array([ 10, 20, 30 ])
+
+# 20d. Create an array z that contains 10 samples, evenly spaced
+# between 20 and 50.
+
+z = np.linspace(start=20, stop=50, num=10)
+
+# 20e. Find the shape of array z.
+
+z.shape
