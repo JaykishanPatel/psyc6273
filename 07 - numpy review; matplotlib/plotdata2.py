@@ -49,3 +49,4 @@ for i, s in enumerate(stimlevels):
 
 # plot proportion correct against stimulus level
 plt.plot(stimlevels,pcorrect,'ro')
+plt.show()
