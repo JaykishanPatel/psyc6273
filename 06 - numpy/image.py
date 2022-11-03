@@ -12,6 +12,7 @@ jmat = np.fromfunction( lambda i, j: j, shape=(n,n) )
 def imgrey( x ):
     plt.imshow(x, cmap='gray')
     plt.colorbar()
+    plt.show()
 imgrey(imat)
 imgrey(jmat)
 

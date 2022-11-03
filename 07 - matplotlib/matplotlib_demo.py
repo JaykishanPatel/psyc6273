@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 d1 = np.random.randn(20).cumsum()
 plt.plot(d1)
 plt.show()
-plt.plot(d1, 'ro--')
-plt.show()
 plt.plot(d1, color='r', marker='o', linestyle='--')
+plt.show()
+plt.plot(d1, 'ro--')
 plt.show()
 # some colours: r g b c m y k w
 # some markers: . o v s
@@ -36,7 +36,6 @@ plt.show()
 # bar plot
 plt.bar(x=(1,2,3), height=(5,10,8))
 plt.xticks(ticks=(1,2,3), labels=['first', 'second', 'third'])
-plt.ylabel('height')
 plt.show()
 
 # formatting: title, axis labels, legend, ticks, text, saving to disk

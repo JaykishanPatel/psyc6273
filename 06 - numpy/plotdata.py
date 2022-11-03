@@ -10,10 +10,11 @@ trials = np.loadtxt(fname='data.txt', comments='#', skiprows=0, delimiter=',')
 stimlevels = np.unique(trials[:,1])
 
 # find performance at each stimulus level
-pcorrect = np.zeros(stimlevels.shape)
+pcorrect = np.zeros(shape=stimlevels.shape)
 for i, s in enumerate(stimlevels):
     f = trials[:,1]==s
     pcorrect[i] = trials[f,2].mean()
 
 # plot proportion correct against stimulus level
 plt.plot(stimlevels,pcorrect,'ro')
+plt.show()
