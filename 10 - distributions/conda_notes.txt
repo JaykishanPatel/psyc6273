@@ -1,0 +1,46 @@
+
+# 1. managing anaconda
+
+# update conda
+conda update conda
+
+# uninstall anaconda
+conda install anaconda-clean
+anaconda-clean --yes
+rm -rf ~/anaconda3
+# anconda-clean creates a backup of all files and directories
+# in a folder named .anaconda_backup in your home directory
+
+
+# 2. managing environments
+
+# create an environment
+conda create --name myenv
+
+# create an environment with a specific version of python
+conda create --name myenv python=3.6
+
+# create an environment using a .yml file
+conda env create -n psychopy -f psychopy-env.yml
+
+# list environments
+conda env list
+
+# activate an environment
+conda activate psychopy
+
+# deactivate current environment
+conda deactivate
+
+# remove an environment
+conda env remove --name myenv
+
+
+# 3. installing packages into the current environment
+
+# install a python package
+conda install -c pytorch pytorch
+
+# install a python package with a specific version
+conda install -c pytorch pytorch==1.8.0
+
